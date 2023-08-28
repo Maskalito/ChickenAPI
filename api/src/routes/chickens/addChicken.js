@@ -1,4 +1,4 @@
-const Api = require('../../api');
+const Api = require('../../server');
 const express = require('express');
 const router = express.Router();
 
@@ -14,7 +14,7 @@ router.post('/', (req, res) => {
     if (!weight)
         return res.status(400).json({ msg: "Your chicken need a weight!" });
     if (!birthday)
-        return res.status(400).json({ msg: "Your chicken need a birthday!" });
+        birthday = new Date();
     if (!steps)
         steps = 0;
     if (!isRunning)
