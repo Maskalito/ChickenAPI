@@ -30,8 +30,8 @@ const CreateChicken = () => {
       setErrorMessage(null);
 
       // Check if every required field is filled
-      if (!data.name || !data.birthday || ! data.weight) {
-        setErrorMessage("Your chicken needs a name, birthday, and weight");
+      if (!data.name || ! data.weight) {
+        setErrorMessage("Your chicken needs a name and a weight");
         return;
       }
       const res: AxiosResponse = await axios.post(url, data);
