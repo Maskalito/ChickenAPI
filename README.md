@@ -29,7 +29,7 @@ git clone git@github.com:Maskalito/ChickenAPI.git
 
 1. Install PostgreSQL on your machine
 
-2. Create database
+2. Create database, table and fill it
 
 Go on your terminal and run this command :
 
