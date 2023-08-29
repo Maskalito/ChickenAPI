@@ -53,7 +53,7 @@ INSERT 0 1
 
 Move to server directory
 ```bash
-cd api
+cd server
 ```
 
 Run the api
